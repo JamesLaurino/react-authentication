@@ -13,10 +13,10 @@ export default function App() {
               <AuthProvider>
                   <Routes>
                       <Route path="/login" element={<Login/>}/>
+                      <Route path="/" element={<Login/>}/>
                       <Route element={<PrivateRoute/>}>
                           <Route path="/dashboard" element={<Dashboard/>}/>
                       </Route>
-                      <Route path="/" element={<Login/>}/>
                   </Routes>
               </AuthProvider>
           </Router>

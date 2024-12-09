@@ -15,7 +15,7 @@ export default function Login()
             auth.loginAction(1);
             return;
         }
-        alert("pleae provide a valid input");
+        alert("please provide a valid input");
     };
 
     const handleInput = (e) => {
